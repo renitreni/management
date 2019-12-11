@@ -1,5 +1,7 @@
 <?php
 
+use PhpParser\Node\Expr\AssignOp\Mod;
+
 return [
 
     /*
@@ -174,6 +176,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Modules\Accounting\Providers\AccountingServiceProvider::class,
+        Modules\Inventory\Providers\InventoryServiceProvider::class,
 
     ],
 
