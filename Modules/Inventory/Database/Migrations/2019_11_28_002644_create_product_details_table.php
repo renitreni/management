@@ -23,6 +23,7 @@ class CreateProductDetailsTable extends Migration
             $table->text('notes')->nullable();
             $table->float('qty')->nullable();
             $table->float('unit_cost')->nullable();
+            $table->float('labor_cost')->nullable();
             $table->float('vendor_price')->nullable();
             $table->float('discount_item')->nullable();
             $table->softDeletes();

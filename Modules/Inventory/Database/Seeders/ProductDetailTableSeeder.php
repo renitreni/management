@@ -47,7 +47,7 @@ class ProductDetailTableSeeder extends Seeder
             $product_detail->product_code = $product->code;
             $product_detail->notes = $faker->paragraph;
             $product_detail->qty = 2;
-            $product_detail->unit_cost = $supply->unit_cost;
+            $product_detail->labor_cost = $faker->randomDigit;
             $product_detail->vendor_price = $faker->randomDigit;
             $product_detail->discount_item = $faker->randomDigit;
             $product_detail->save();
